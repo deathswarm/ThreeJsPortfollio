@@ -49,17 +49,17 @@ function addStar() {
 Array(200).fill().forEach(addStar);
 
 // Background
-const spaceTexture = new THREE.TextureLoader().load('sky.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/deathswarm/ThreeJsPortfollio/main/sky.jpg');
 scene.background = spaceTexture;
 
 // Avatar
-const DHRUBOTEXTURE = new THREE.TextureLoader().load('dhrubo.jpg');
+const DHRUBOTEXTURE = new THREE.TextureLoader().load('https://raw.githubusercontent.com/deathswarm/ThreeJsPortfollio/main/dhrubo.jpg');
 const DHRUBO = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: DHRUBOTEXTURE }));
 scene.add(DHRUBO);
 
 // Moon
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/deathswarm/ThreeJsPortfollio/main/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/deathswarm/ThreeJsPortfollio/main/normal.jpg');
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 32, 32),
     new THREE.MeshStandardMaterial({
